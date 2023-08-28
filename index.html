@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="cabecalho">
+        <img id="logo" src="img/logo.png" alt="Logo">
+        <div id="botoesCabecalho">
+            <button class="botaoCabecalho">Início</button>
+            <button class="botaoCabecalho">Contato</button>
+            <button class="botaoCabecalho">Sobre Nós</button>
+        </div>
+    </div>
+    <div id="principal">
+        <h1 id="titulo">PEDRA, PAPEL E TESOURA</h1>
+        <div id="placar">
+            <div id="jogador">
+                <h2 id="jogadorNome">Giovanna</h2>
+                <p id="jogadorPontos">0</p>
+                <ul id="jogadorEscolha">
+                    <li>
+                       <a id="jogadorEscolha1" onclick="jogar(1)">
+                          <img src="img/pedra.jpg" alt="">
+                       </a>
+                    </li>
+                    <li>
+                        <a id="jogadorEscolha2" onclick="jogar(2)">
+                            <img src="img/papel.jpg" alt="">
+                         </a>
+                    </li>
+                    <li>
+                        <a id="jogadorEscolha3" onclick="jogar(3)">
+                            <img src="img/tesoura.jpg" alt="">
+                         </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="versus">VS</div>
+            <div id="computador">
+                <h2 id="computadorNome">Computador</h2>
+                <p id="computadorPontos">0</p>
+                <ul id="computadorEscolha">
+                    <li>
+                        <a id="computadorEscolha1">
+                            <img src="img/pedra.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="computadorEscolha2">
+                            <img src="img/papel.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="computadorEscolha3">
+                            <img src="img/tesoura.jpg" alt="">
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="mensagem">&nbsp;</div>
+    </div>
+    <div id="rodape">
+        &copy; Copyright 2023 Senai Suzano.
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

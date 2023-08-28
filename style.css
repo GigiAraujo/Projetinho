@@ -1,0 +1,155 @@
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a{
+    opacity: 0.2;
+    transition: ease-in-out 0.3s;
+}
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado{
+    opacity: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #433066;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#principal{
+background-color: #260847;
+border-radius: 10px;
+padding: 40px;
+box-shadow: 0 0 70px rgba(0, 0, 0, 0.5);
+width: 80%;
+max-width: 800px;
+text-align: center;
+margin: 0 auto;
+margin-top: 150px;
+}
+
+#titulo {
+    color: #842fdf;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#placar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+#jogador, #computador {
+    width: 45%;
+}
+
+#jogadorEscolha, #computadorEscolha {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#jogadorEscolha img, #computadorEscolha img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #9f71c4;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+#jogadorEscolha img:hover, #computadorEscolha img:hover {
+    border-color: #582e7c;
+}
+
+#mensagem {
+    margin-top: 30px;
+    font-weight: bold;
+    color: #842fdf;
+    font-size: 24px;
+}
+
+#reiniciar {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#reiniciar:hover {
+    background-color: #2980b9;
+}
+
+#cabecalho {
+    background-color: #6642ac;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+    position: absolute; 
+    top: 0; 
+    width: 100%;
+}
+
+#logo {
+    width: 100px;
+    height: 90px;
+    margin-right: 20px;
+    border-radius: 40px;
+    margin-left: 200px;
+}
+
+#botoesCabecalho {
+    display: flex;
+    gap: 10px;
+}
+
+.botaoCabecalho {
+    background-color: #33156c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 130px;
+    width: 150px;
+}
+
+.botaoCabecalho:hover {
+    background-color: #9d6eed;
+}
+
+#rodape {
+    background-color: #6642ac;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#jogadorNome, #computadorNome, #computadorPontos, #jogadorPontos, #versus{
+    color: white;
+}
